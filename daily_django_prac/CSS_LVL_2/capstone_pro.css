@@ -1,0 +1,37 @@
+body{
+    background-color: #052836;
+    color: aliceblue;
+    border-bottom: 50px solid skyblue;
+    border-right: 50px solid skyblue;
+    border-left: 50px solid skyblue;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+}
+
+div{
+    font-size: large;
+    margin: 50px 250px 50px 250px;
+}
+
+p{
+    font-size: large; 
+}
+
+input{
+    width: 300px; /* Adjust the width as per your desired size */
+    height: 40px;
+}
+.round-button {
+    border-radius: 10px; /* Adjust the value as per your desired roundness */
+    padding: 10px 20px;
+    background-color: #f0de40;
+    border: 0.5px solid white ;
+    cursor: pointer;
+    font-size: large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  h3{
+    margin-block-end: 0px 0px 20px 0px;
+  }
