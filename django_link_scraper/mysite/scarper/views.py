@@ -3,7 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 from django.http import HttpResponseRedirect
 from .models import Link
-# Create your views here.
 
 def scarpe(request):
     if request.method == 'POST':
