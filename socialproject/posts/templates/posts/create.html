@@ -1,0 +1,9 @@
+{% extends 'users/base.html' %}
+{% block body %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <!-- as_p to render it as paragraph -->
+    <button type="submit">Post</button>
+    </form>   
+{% endblock %}
