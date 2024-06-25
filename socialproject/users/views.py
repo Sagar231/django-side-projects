@@ -23,6 +23,7 @@ def userlogin(request):
                 return HttpResponse('invalid credentials')
     else:
         form = LoginForm()
+    # return HttpResponse('cant show form')
     return render(request,'users/login.html',{'form':form})
 
 
@@ -34,7 +35,8 @@ def user_logout(request):
 def index(request):
     current_user = request.user
     posts = Post.objects.filter(user=current_user)
-    return render(request,'users/index.html',{"posts":posts})
+    profile = Profile.objects.filter(user=current_user).first()
+    return render(request,'users/index.html',{"posts":posts,'profile':profile})
 
 
 def register(request):
